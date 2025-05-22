@@ -1,7 +1,5 @@
-import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-// const initialState: UserState = {
-//     data: []
-// };
+import { createSlice } from "@reduxjs/toolkit";
+
 interface TaskState {
     data: Task[];
 }

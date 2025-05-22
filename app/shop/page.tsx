@@ -1,11 +1,8 @@
 'use client'
-import ArrowRightToBracket from "@/components/icons/arrow-right-to-bracket"
-import CartSolid from "@/components/icons/cart-solid"
 import ShopHeader from "@/components/ShopHeader"
 import withAuth from "@/hoc/withAuth"
 import { Product } from "@/lib/interface"
 import { addToCart } from "@/lib/store/slice/sliceCart"
-// import { Product } from "@/lib/store/slice/sliceProducts"
 import { RootState } from "@/lib/store/store"
 import Link from "next/link"
 import { useDispatch, useSelector } from "react-redux"

@@ -1,4 +1,4 @@
-import { products } from "@/lib/dummy";
+
 import { Product } from "@/lib/interface";
 import { createSlice } from "@reduxjs/toolkit";
 

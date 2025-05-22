@@ -6,7 +6,7 @@ const doneanddeal = createSlice({
         data: {}
     },
     reducers: {
-        storeData: (state, action) => { }
+        storeData: () => { }
     }
 })
 

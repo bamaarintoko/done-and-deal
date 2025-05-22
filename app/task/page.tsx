@@ -19,7 +19,7 @@ function TaskPage() {
     }, [tasks])
 
     const addTask = () => {
-        let task = {
+        const task = {
             id: generateUID(),
             name: taskName,
             createAt: new Date().toISOString(),

@@ -1,6 +1,5 @@
 'use client'
 import withAuth from "@/hoc/withAuth";
-import Image from "next/image";
 import Link from "next/link";
 
 function Home() {
