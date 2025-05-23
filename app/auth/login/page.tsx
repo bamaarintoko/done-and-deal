@@ -54,10 +54,9 @@ function PageLogin() {
                         Login
                     </button>
                     <div className="flex items-center justify-center">
-
-                    <Link href={"register"}>
-                        register
-                    </Link>
+                        <Link href={"register"}>
+                            register
+                        </Link>
                     </div>
                 </form>
             </div>

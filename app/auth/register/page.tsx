@@ -5,6 +5,7 @@ import RegularInput from "@/components/RegularInput";
 import withGuest from "@/hoc/withGuest";
 import { generateUID } from "@/lib/functions";
 import { storeUser } from "@/lib/store/slice/sliceAuth";
+import Link from "next/link";
 import { useState } from "react";
 import { useDispatch } from "react-redux";
 
@@ -58,6 +59,11 @@ function PageRegister() {
                     >
                         Register
                     </button>
+                    <div className="flex items-center justify-center">
+                        <Link href={"login"}>
+                            login
+                        </Link>
+                    </div>
                 </form>
             </div>
         </div>
