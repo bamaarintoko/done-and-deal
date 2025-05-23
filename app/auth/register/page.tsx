@@ -48,8 +48,8 @@ function PageRegister() {
                     />
                     <label className="block mb-2 text-sm font-medium text-gray-700">Name</label>
                     <RegularInput
-                        value={password}
-                        onChange={(e) => setPassword(e.target.value)}
+                        value={name}
+                        onChange={(e) => setName(e.target.value)}
                     />
 
                     <button
