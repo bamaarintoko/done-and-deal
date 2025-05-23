@@ -61,11 +61,11 @@ function TaskPage() {
                     tasks.map((x, y) => {
                         return (
                             <div key={y} className="py-2 px-2  flex space-x-4">
-                                <div role="button" onClick={() => updateTaskStatus(x.id)} className="flex-1">
+                                <div role="button" onClick={() => updateTaskStatus(x.id)} className="flex-1 cursor-pointer">
 
                                     <p className={x.done ? 'line-through text-gray-500' : ''}>{x.name}</p>
                                 </div>
-                                <div onClick={() => handleDeleteTask(x.id)} className="px-2 ">
+                                <div onClick={() => handleDeleteTask(x.id)} className="px-2 cursor-pointer">
                                     <TrashBinSolid />
                                 </div>
                             </div>

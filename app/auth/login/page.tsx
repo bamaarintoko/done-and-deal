@@ -1,8 +1,11 @@
 'use client'
 
+import InputEmail from "@/components/InputEmail";
+import InputPassword from "@/components/InputPassword";
 import withGuest from "@/hoc/withGuest";
 import { generateUID } from "@/lib/functions";
 import { storeUser } from "@/lib/store/slice/sliceAuth";
+import Link from "next/link";
 import { useState } from "react";
 import { useDispatch } from "react-redux";
 
@@ -34,29 +37,28 @@ function PageLogin() {
                     <h1 className="text-2xl font-bold mb-6 text-center">Login</h1>
 
                     <label className="block mb-2 text-sm font-medium text-gray-700">Email</label>
-                    <input
-                        type="email"
-                        className="w-full p-2 mb-4 border border-gray-300 rounded"
+                    <InputEmail
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
-                        required
                     />
 
                     <label className="block mb-2 text-sm font-medium text-gray-700">Password</label>
-                    <input
-                        type="password"
-                        className="w-full p-2 mb-6 border border-gray-300 rounded"
+                    <InputPassword
                         value={password}
                         onChange={(e) => setPassword(e.target.value)}
-                        required
                     />
-
                     <button
                         type="submit"
                         className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded"
                     >
                         Login
                     </button>
+                    <div className="flex items-center justify-center">
+
+                    <Link href={"register"}>
+                        register
+                    </Link>
+                    </div>
                 </form>
             </div>
         </div>
