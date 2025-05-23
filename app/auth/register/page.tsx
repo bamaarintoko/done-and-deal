@@ -1,6 +1,7 @@
 'use client'
 import InputEmail from "@/components/InputEmail";
 import InputPassword from "@/components/InputPassword";
+import RegularInput from "@/components/RegularInput";
 import withGuest from "@/hoc/withGuest";
 import { generateUID } from "@/lib/functions";
 import { storeUser } from "@/lib/store/slice/sliceAuth";
@@ -10,6 +11,7 @@ import { useDispatch } from "react-redux";
 function PageRegister() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [name, setName] = useState('');
     const dispatch = useDispatch()
 
     const handleRegister = (e: React.FormEvent) => {
@@ -41,6 +43,11 @@ function PageRegister() {
 
                     <label className="block mb-2 text-sm font-medium text-gray-700">Password</label>
                     <InputPassword
+                        value={password}
+                        onChange={(e) => setPassword(e.target.value)}
+                    />
+                    <label className="block mb-2 text-sm font-medium text-gray-700">Name</label>
+                    <RegularInput
                         value={password}
                         onChange={(e) => setPassword(e.target.value)}
                     />
